@@ -1,0 +1,27 @@
+{
+  "name": "stock-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushii2/stock-cli-nodejs.git"
+  },
+  "author": "Saksham Saraswat",
+  "license": "ISC",
+  "bin": {
+    "stock": "bin/stock"
+  },
+  "bugs": {
+    "url": "https://github.com/sushii2/stock-cli-nodejs/issues"
+  },
+  "homepage": "https://github.com/sushii2/stock-cli-nodejs#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "figlet": "^1.2.4",
+    "minimist": "^1.2.0"
+  }
+}

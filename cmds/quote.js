@@ -36,11 +36,11 @@ module.exports = args => {
       console.log(`\t52 Week Low: $${JSON.stringify(result["week52Low"])}`);
       console.log(`\tIs the U.S. Market Open?: ${JSON.stringify(result["isUSMarketOpen"])}`);
       console.log("\tIf the market is open the quote will update every 15 minutes")
-      throbber.succeed("All Done");
+      throbber.succeed(`${chalk.green('All Done')}`);
       process.exit(0);
     })
     .catch(err => {
-      throbber.fail("There was some problem");
+      throbber.fail(`${chalk.red('Some Problem Occured')}`);
       console.log("\nUnknown Symbol or API down");
       process.exit(1);
     });

@@ -13,7 +13,7 @@ module.exports = args => {
 
   rp(options)
     .then(result => {
-      console.log(`\nCompany Information for ${symbol}:`);
+      console.log(`\nCompany Statas for ${symbol}:`);
       console.log(`\tCompany Name: ${JSON.stringify(result["companyName"])}`);
       console.log(`\t52 Week High: $${JSON.stringify(result["week52High"])}`);
       console.log(`\t52 Week Low: $${JSON.stringify(result["week52Low"])}`);

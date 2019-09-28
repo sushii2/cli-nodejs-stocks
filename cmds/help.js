@@ -5,8 +5,6 @@ const menus = {
     quote .............. pulls quote
     company ............ pulls company info
     stats .............. pulls key stats
-    dividends .......... pulls last quarter dividends
-    earnings ........... pulls last quarters earnings
     marketvolume ....... pulls real time traded volume on U.S. markets
     news ............... pulls news related to specific stock
     version ............ show package version
@@ -26,21 +24,6 @@ const menus = {
     stock stats <options>
 
     --symbol, -s ..... the symbol statistics are needed for`,
-
-  dividends: `
-    stock dividends <options>
-
-    --symbol, -s ..... the symbol dividend report is needed for`,
-
-  earnings: `
-    stock earnings <options>
-
-    --symbol, -s ..... the symbol earnings are needed for`,
-
-  marketvolume: `
-    stock marketvalue <options>
-
-    --symbol, -s ..... the symbol market volume is needed for`,
 
   news: `
     stock news <options>

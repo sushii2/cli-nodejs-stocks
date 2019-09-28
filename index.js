@@ -31,15 +31,6 @@ module.exports = () => {
         case 'stats':
             require('./cmds/stats')(args)
             break
-        case 'dividends':
-            require('./cmds/dividends')(args)
-            break
-        case 'earnings':
-            require('./cmds/earnings')(args)
-            break
-        case 'marketvalue':
-            require('./cmds/marketvalue')(args)
-            break
         case 'news':
             require('./cmds/news')(args)
             break

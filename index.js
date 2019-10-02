@@ -34,6 +34,9 @@ module.exports = () => {
         case 'news':
             require('./cmds/news')(args)
             break
+        case 'chart':
+            require('./cmds/chart')(args)
+            break
         case 'version':
             require('./cmds/version')(args)
             break

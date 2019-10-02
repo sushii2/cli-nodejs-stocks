@@ -22,6 +22,7 @@ module.exports = args => {
           console.log(`Article Link: ${JSON.stringify(res["url"])}`);
           console.log(`Summary: ${JSON.stringify(res["summary"])}`);
           console.log(`Related to: ${JSON.stringify(res["related"])}`);
+          console.log(`${chalk.cyan("--------------------------------------------------")}`);
       }
       throbber.succeed(`${chalk.green('All Done')}`);
       process.exit(0);

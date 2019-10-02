@@ -13,7 +13,7 @@ module.exports = args => {
 
   rp(options)
     .then(result => {
-      console.log(`\nStock Quote for ${symbol}:`);
+      console.log("\n")
       console.log(`\tCompany Name: ${JSON.stringify(result["companyName"])}`);
       console.log(
         `\tPrimary Exchange: ${JSON.stringify(result["primaryExchange"])}`
@@ -30,12 +30,18 @@ module.exports = args => {
         `\tPrevious Volume: ${JSON.stringify(result["previousVolume"])}`
       );
       console.log(`\tAverage Total Volume: ${JSON.stringify(result["avgTotalVolume"])}`);
-      console.log(`\tPercent Change: ${JSON.stringify(result["changePercent"])}%`);
+      const chngPrct = JSON.stringify(result["changePercent"]);
+      if(chngPrct.charAt(0) === '-') {
+         console.log(`\tPercent Change: ${chalk.red(`${JSON.stringify(result["changePercent"])}% ▼`)}`);
+      } else {
+        console.log(`\tPercent Change: ${chalk.green(`${JSON.stringify(result["changePercent"])}% ▲`)}`);
+      }
       console.log(`\tMarket Cap: ${JSON.stringify(result["marketCap"])}`);
       console.log(`\t52 Week High: $${JSON.stringify(result["week52High"])}`);
       console.log(`\t52 Week Low: $${JSON.stringify(result["week52Low"])}`);
       console.log(`\tIs the U.S. Market Open?: ${JSON.stringify(result["isUSMarketOpen"])}`);
       console.log("\tIf the market is open the quote will update every 15 minutes")
+      console.log("\t")
       throbber.succeed(`${chalk.green('All Done')}`);
       process.exit(0);
     })

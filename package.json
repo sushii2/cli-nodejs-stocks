@@ -20,12 +20,20 @@
   },
   "homepage": "https://github.com/sushii2/stock-cli-nodejs#readme",
   "dependencies": {
+    "array-interpolatejs": "^1.0.2",
+    "asciichart": "^1.5.9",
     "axios": "^0.19.0",
     "chalk": "^2.4.2",
+    "cnn-market": "^1.0.3",
     "figlet": "^1.2.4",
+    "human-readable-numbers": "^0.9.5",
+    "lodash": "^4.17.15",
     "minimist": "^1.2.0",
+    "node-fetch": "^2.6.0",
+    "node-iex-cloud": "^0.1.54",
     "ora": "^4.0.1",
     "request": "^2.88.0",
-    "request-promise": "^4.2.4"
+    "request-promise": "^4.2.4",
+    "yahoo-stocks": "^2.0.4"
   }
 }

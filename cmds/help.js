@@ -30,10 +30,10 @@ const menus = {
 
     --symbol, -s ..... the symbol news is needed for`,
 
-    chart: `
+  chart: `
     stock chart <options>
 
-    --symbol, -s ..... the symbol news is needed for`
+    --symbol, -s ..... the symbol news is needed for`,
 
 }
 

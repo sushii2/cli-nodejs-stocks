@@ -1,5 +1,7 @@
 # stock-cli
 
+![stockcli](stockcli.PNG)
+
 stock-cli is a command line HTTP client, which can be used to pull various information about stocks
 
 ## Installation

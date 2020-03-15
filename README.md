@@ -6,7 +6,7 @@ stock-cli is a command line HTTP client, which can be used to pull various infor
 
 ## Installation
 
-Firt clone or download the repository.
+First clone or download the repository.
 
 ```bash
 git clone https://github.com/sushii2/cli-nodejs-stocks

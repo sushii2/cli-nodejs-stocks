@@ -29,7 +29,7 @@
     "human-readable-numbers": "^0.9.5",
     "lodash": "^4.17.15",
     "minimist": "^1.2.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^3.1.1",
     "node-iex-cloud": "^0.1.54",
     "ora": "^4.0.1",
     "request": "^2.88.0",
